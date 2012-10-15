@@ -3,6 +3,7 @@ module SocialShareButton
   module Helper
     def social_share_button_tag(title = "", opts = {})
       rel = opts[:rel]
+      opts[:substitutes] ||= {}
       html = []
       html << "<div class='social-share-button' data-title='#{title}' data-img='#{opts[:image]}'>"
       
