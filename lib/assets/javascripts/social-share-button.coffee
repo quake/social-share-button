@@ -18,17 +18,17 @@ window.SocialShareButton =
       when "facebook"
         SocialShareButton.openUrl("http://www.facebook.com/sharer.php?t=#{title}&u=#{url}")
       when "qq"
-        SocialShareButton.openUrl("http://connect.qq.com/widget/shareqq/index.html?url=#{url}&title=#{title}&pics=#{img}")
+        SocialShareButton.openUrl("http://connect.qq.com/widget/shareqq/index.html?url=#{url}&desc=#{title}&pics=#{img}")
       when "qzone"
         SocialShareButton.openUrl("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=#{url}&title=#{title}&pics=#{img}")
       when "tqq"
         SocialShareButton.openUrl("http://share.v.t.qq.com/index.php?c=share&a=index&url=#{url}&title=#{title}&pic=#{img}")
       when "baidu"
-        SocialShareButton.openUrl("http://apps.hi.baidu.com/share/?url=#{url}&title=#{title}&content=")
+        SocialShareButton.openUrl("http://apps.hi.baidu.com/share/?url=#{url}&title=#{title}")
       when "kaixin001"
         SocialShareButton.openUrl("http://www.kaixin001.com/rest/records.php?url=#{url}&content=#{title}&style=11&pic=#{img}")
       when "renren"
-        SocialShareButton.openUrl("http://widget.renren.com/dialog/share?resourceUrl=#{url}&title=#{title}&description=")
+        SocialShareButton.openUrl("http://widget.renren.com/dialog/share?resourceUrl=#{url}&title=#{title}")
       when "google_plus"
         SocialShareButton.openUrl("https://plus.google.com/share?url=#{url}&t=#{title}")
     false
